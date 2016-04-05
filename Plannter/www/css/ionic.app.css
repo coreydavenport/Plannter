@@ -9730,3 +9730,28 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+
+/***********************************************
+
+ MAIN STYLES (temporary) 
+
+***********************************************/
+
+
+
+.wrapper {
+  position: relative;
+
+}
+
+.wrapper h1 {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  text-align: justify;
+  padding-left: 15px;
+  color: white;
+  font-size: 60px;
+
+}
