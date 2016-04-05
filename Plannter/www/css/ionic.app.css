@@ -9731,27 +9731,19 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+/******************************************************
 
-/***********************************************
+MAIN STYLES (temporary)
 
- MAIN STYLES (temporary) 
-
-***********************************************/
-
-
-
+******************************************************/
 .wrapper {
-  position: relative;
-
-}
+  position: relative; }
 
 .wrapper h1 {
-  width: 70%;
   position: absolute;
+  width: 70%;
   top: 0;
-  text-align: justify;
-  padding-left: 15px;
   color: white;
+  text-align: justify;
   font-size: 60px;
-
-}
+  padding-left: 15px; }

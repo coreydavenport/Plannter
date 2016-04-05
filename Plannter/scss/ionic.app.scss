@@ -23,3 +23,28 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+
+
+/******************************************************
+
+MAIN STYLES (temporary)
+
+******************************************************/
+
+.wrapper {
+
+  position: relative;
+
+}
+
+.wrapper h1 {
+
+  position: absolute;
+  width: 70%;
+  top: 0;
+  color: white;
+  text-align: justify;
+  font-size: 60px;
+  padding-left: 15px;
+
+}
