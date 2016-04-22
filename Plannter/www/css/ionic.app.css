@@ -9736,8 +9736,10 @@ a.button {
 MAIN STYLES (temporary)
 
 ******************************************************/
+/** Text over page images **/
 .wrapper {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .wrapper h1 {
   position: absolute;
@@ -9748,6 +9750,12 @@ MAIN STYLES (temporary)
   font-size: 60px;
   padding-left: 15px; }
 
+.wrapper button {
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  right: 40px; }
+
 .wrapper h2 {
   position: absolute;
   width: 100%;
@@ -9755,3 +9763,13 @@ MAIN STYLES (temporary)
   color: white;
   text-align: center;
   font-size: 45px; }
+
+/** Break lines **/
+hr {
+  color: #FFFBFD; }
+
+.loginSubmit {
+  margin-left: 5px; }
+
+.signupSubmit {
+  margin-left: 5px; }

@@ -31,9 +31,13 @@ MAIN STYLES (temporary)
 
 ******************************************************/
 
+
+/** Text over page images **/
+
 .wrapper {
 
   position: relative;
+  overflow: hidden;
 
 }
 
@@ -49,6 +53,14 @@ MAIN STYLES (temporary)
 
 }
 
+.wrapper button {
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+
+}
+
 .wrapper h2 {
 
   position: absolute;
@@ -57,5 +69,27 @@ MAIN STYLES (temporary)
   color: white;
   text-align: center;
   font-size: 45px;
+
+}
+
+
+
+/** Break lines **/
+
+hr {
+
+	color: #FFFBFD;
+
+}
+
+.loginSubmit {
+
+  margin-left: 5px;
+
+}
+
+.signupSubmit {
+
+  margin-left: 5px;
 
 }

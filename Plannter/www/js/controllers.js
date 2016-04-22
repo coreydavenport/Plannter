@@ -1,4 +1,4 @@
-angular.module('app.controllers', [])
+angular.module('app.controllers', ['firebase'])
   
 .controller('aboutCtrl', function($scope) {
 
@@ -9,6 +9,14 @@ angular.module('app.controllers', [])
 })
    
 .controller('donateCtrl', function($scope) {
+
+})
+
+.controller('loginCtrl', function($scope) {
+
+})
+
+.controller('signupCtrl', function($scope) {
 
 })
     
