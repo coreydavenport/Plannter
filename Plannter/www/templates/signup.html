@@ -1,17 +1,17 @@
 <ion-view title="Sign up" id="page6">
   <ion-content>
     <div class="wrapper">
-      <form role="form" class="signUp padding" ng-submit="addUser()" >
+      <form role="form" class="signUp padding" ng-submit="createUser(form)" >
         <label class="item item-input item-stacked-label">
           <span class="input-label">Email</span>
-          <input ng-model="email" type="email" placeholder="me@gmail.com" id="uName">
+          <input ng-model="form.email" ng-name="email" type="email" placeholder="me@gmail.com" id="uName">
         </label>
         <label class="item item-input item-stacked-label">
           <span class="input-label">Password</span>
-          <input ng-model="password" type="password" placeholder="******" id="pwd" >
+          <input ng-model="form.password" ng-name="password" type="password" placeholder="******" id="pwd" >
         </label>
         <br />
-        <button class="button button-balanced button-block signupSubmit" type="submit">Submit</button>
+        <button class="button button-balanced button-block" type="submit">Submit</button>
 
 
       </form>
