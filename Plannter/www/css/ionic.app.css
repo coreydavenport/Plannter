@@ -9750,7 +9750,7 @@ MAIN STYLES (temporary)
   font-size: 60px;
   padding-left: 15px; }
 
-.wrapper button {
+.signUpButton {
   width: 100px;
   position: absolute;
   bottom: 60px;
@@ -9771,5 +9771,6 @@ hr {
 .loginSubmit {
   margin-left: 5px; }
 
-.signupSubmit {
-  margin-left: 5px; }
+.signUp {
+  width: 100%;
+  height: 300px; }
