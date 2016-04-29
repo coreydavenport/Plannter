@@ -14,6 +14,14 @@ angular.module('app.controllers', ['firebase'])
 
 })
 
+.controller('dashboardCtrl', function($scope) {
+
+})
+
+.controller('addcropCtrl', function($scope) {
+
+})
+
 .controller('loginCtrl', function($scope, $firebaseAuth, $firebaseObject) {
 
 })
@@ -59,7 +67,7 @@ function LoginCtrl(Auth, $state) {
   this.loginWithFacebook = function loginWithFacebook() {
     Auth.$authWithOAuthPopup('facebook')
       .then(function(authData) {
-        $state.go('tabsPreLogin.home');
+        $state.go('tabsPostLogin.dashboard');
       });
   };
 

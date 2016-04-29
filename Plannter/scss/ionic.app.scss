@@ -37,6 +37,11 @@ MAIN STYLES (temporary)
 .has-header {
   top: 0;
 
+
+}
+
+.tabs {
+  height: 70px;
 }
 
 .wrapper {
@@ -86,17 +91,49 @@ hr {
 	color: #FFFBFD;
 
 }
-
-.loginSubmit {
-
-  margin-left: 5px;
-
-}
-
-
-
+/** Sign Up Button on Home Page **/
 .signUp {
   width: 100%;
   height: 300px;
 
+}
+
+/** Login Styles **/
+
+.login {
+background: #52b848; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #52b848 0%,#9ecc46 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #52b848 0%,#9ecc46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.item-stacked-label {
+  border: none;
+
+}
+
+.item {
+  margin-left: 0;
+}
+
+.input-label {
+  color: white;
+}
+
+/** Sign Up Styles **/
+
+.signupBG {
+background: #52b848; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #52b848 0%,#9ecc46 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #52b848 0%,#9ecc46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/** Home Page Styles **/
+
+.custom-icon {
+  font-size: 64px;
+  color: #52b848;
 }

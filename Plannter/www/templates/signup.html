@@ -1,5 +1,5 @@
 <ion-view title="Sign up" id="page6">
-  <ion-content>
+  <ion-content class="signupBG">
     <div class="wrapper">
       <form role="form" class="signUp padding" ng-submit="createUser(form)" >
         <label class="item item-input item-stacked-label">
@@ -12,7 +12,9 @@
         </label>
         <br />
         <button class="button button-balanced button-block" type="submit">Submit</button>
-
+        <button class="button button-stable button-block" ui-sref="login">
+          I have an account
+        </button>
 
       </form>
     </div>
@@ -20,10 +22,7 @@
       
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
       </div>
-      <br><br><br>
-      <button class="button button-stable button-block" ui-sref="login">
-        I have an account
-      </button>
+
     </div>
   </ion-content>
 </ion-view>

@@ -21,7 +21,7 @@ angular.module('app.routes', [])
     templateUrl: 'templates/login.html',
     controller: 'LoginCtrl as ctrl'
     })
-    
+
     .state('signup', {
       url:'/signup',
       templateUrl:'templates/signup.html',
@@ -55,6 +55,56 @@ angular.module('app.routes', [])
     views: {
       'tab3': {
         templateUrl: 'templates/donate.html',
+        controller: 'donateCtrl'
+      }
+    }
+  })
+
+  .state('tabsPostLogin.homeIn', {
+    url: '/homeIn',
+    views: {
+      'tab9': {
+        templateUrl: 'templates/homeIn.html',
+        controller: 'homeCtrl'
+      }
+    }
+  })
+
+  .state('tabsPostLogin.dashboard', {
+    url: '/dashboard',
+    views: {
+      'tab7': {
+        templateUrl: 'templates/dashboard.html',
+        controller: 'dashboardCtrl'
+      }
+    }
+  })     
+
+  .state('tabsPostLogin.addcrop', {
+    url: '/addcrop',
+    views: {
+      'tab8': {
+        templateUrl: 'templates/addcrop.html',
+        controller: 'addcropCtrl'
+      }
+    }
+  }) 
+
+  .state('tabsPostLogin.aboutIn', {
+    url: '/aboutIn',
+    views: {
+      'tab10': {
+        templateUrl: 'templates/aboutIn.html',
+        controller: 'aboutCtrl'
+      }
+    }
+  })
+
+  .state('tabsPostLogin.donateIn', {
+    url: '/donateIn',
+    views: {
+      'tab11': {
+        templateUrl: 'templates/donateIn.html',
         controller: 'donateCtrl'
       }
     }
