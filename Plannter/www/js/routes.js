@@ -11,12 +11,17 @@ angular.module('app.routes', [])
 
 
   $stateProvider
+    // .state('login', {
+    //   url:'/login',
+    //   templateUrl:'templates/login.html'
+
+    // })
     .state('login', {
-      url:'/login',
-      templateUrl:'templates/login.html'
-
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl as ctrl'
     })
-
+    
     .state('signup', {
       url:'/signup',
       templateUrl:'templates/signup.html',
@@ -25,7 +30,7 @@ angular.module('app.routes', [])
     })    
   
 
-      .state('tabsPreLogin.about', {
+  .state('tabsPreLogin.about', {
     url: '/about',
     views: {
       'tab1': {
@@ -58,6 +63,12 @@ angular.module('app.routes', [])
   .state('tabsPreLogin', {
     url: '/tabsprelogin',
     templateUrl: 'templates/tabsPreLogin.html',
+    abstract:true
+  })
+
+  .state('tabsPostLogin', {
+    url: '/tabspostlogin',
+    templateUrl: 'templates/tabsPostLogin.html',
     abstract:true
   })
 

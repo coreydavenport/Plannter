@@ -1,4 +1,6 @@
-angular.module('app.controllers', [])
+angular.module('app.controllers', ['firebase'])
+
+.controller('LoginCtrl', LoginCtrl)
   
 .controller('aboutCtrl', function($scope) {
 
@@ -52,4 +54,15 @@ angular.module('app.controllers', [])
 
 
 })
+
+function LoginCtrl(Auth, $state) {
+  this.loginWithFacebook = function loginWithFacebook() {
+    Auth.$authWithOAuthPopup('facebook')
+      .then(function(authData) {
+        $state.go('tabsPreLogin.home');
+      });
+  };
+
+}
+LoginCtrl.$inject = ['Auth', '$state'];
     

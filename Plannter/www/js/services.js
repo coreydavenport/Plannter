@@ -1,10 +1,17 @@
-angular.module('app.services', [])
+angular.module('app.services', ['firebase'])
 
-.factory('BlankFactory', [function(){
+.factory('Auth', Auth);
 
-}])
+function Auth(rootRef, $firebaseAuth) {
+  return $firebaseAuth(rootRef);
+}
+Auth.$inject = ['rootRef', '$firebaseAuth'];
 
-.service('BlankService', [function(){
+// .factory('BlankFactory', [function(){
 
-}]);
+// }])
+
+// .service('BlankService', [function(){
+
+// }]);
 

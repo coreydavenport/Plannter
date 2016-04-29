@@ -9737,6 +9737,9 @@ MAIN STYLES (temporary)
 
 ******************************************************/
 /** Text over page images **/
+.has-header {
+  top: 0; }
+
 .wrapper {
   position: relative;
   overflow: hidden; }
