@@ -73,4 +73,6 @@ function LoginCtrl(Auth, $state) {
 
 }
 LoginCtrl.$inject = ['Auth', '$state'];
+
+
     
