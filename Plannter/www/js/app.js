@@ -9,6 +9,8 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 .constant('FirebaseUrl', 'https://plannter.firebaseio.com/')
 
+
+
 .service('rootRef', ['FirebaseUrl', Firebase])
 
 .run(function($ionicPlatform) {

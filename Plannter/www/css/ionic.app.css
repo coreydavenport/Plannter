@@ -9801,6 +9801,14 @@ hr {
 .input-label {
   color: white; }
 
+.button-outline.button-outline {
+  color: #ffffff;
+  background: transparent; }
+
+.button-outline.button-outline.activated {
+  background-color: #ffffff;
+  color: #52b848; }
+
 /** Sign Up Styles **/
 .signupBG {
   background: #52b848;
@@ -9818,3 +9826,16 @@ hr {
 .custom-icon {
   font-size: 64px;
   color: #52b848; }
+
+/** Add Crop Form **/
+.pageHeading {
+  padding-top: 30px;
+  color: #272727;
+  font-family: "Helvetica Neue", 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  border-bottom: solid, 1px; }
+
+.addCropSave {
+  padding-left: 0;
+  margin-left: 0, auto; }
