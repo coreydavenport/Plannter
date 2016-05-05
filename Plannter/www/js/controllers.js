@@ -18,8 +18,13 @@ angular.module('app.controllers', ['firebase'])
 
 })
 
-.controller('addcropCtrl', function($scope) {
+.controller('addcropCtrl', function($scope, $firebaseObject) {
+	var ref = new Firebase("https://plannter.firebaseio.com/crops/");
+	console.log(ref);
 
+	var obj = $firebaseObject(ref);
+
+	
 })
 
 .controller('loginCtrl', function($scope, $firebaseAuth, $firebaseObject) {
@@ -73,6 +78,4 @@ function LoginCtrl(Auth, $state) {
 
 }
 LoginCtrl.$inject = ['Auth', '$state'];
-
-
     
