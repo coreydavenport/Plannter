@@ -18,13 +18,24 @@ angular.module('app.controllers', ['firebase'])
 
 })
 
-.controller('addcropCtrl', function($scope, $firebaseObject) {
+.controller('addcropCtrl', function($scope, $firebaseObject, $http) {
 	var ref = new Firebase("https://plannter.firebaseio.com/crops/");
 	console.log(ref);
 
 	var obj = $firebaseObject(ref);
 
-	
+	$scope.formModel = {};
+
+	$scope.onSubmit = function () {
+		console.log("Form Submitted!");
+		console.log($scope.formModel);
+
+		$http.post('https://plannter.firebaseio.com/crops/', $scope.formModel).success(function (data) {
+				console.log("Success!");
+			}).error(function (data) {
+				console.log("Something went wrong :(");
+			})
+	};
 })
 
 .controller('loginCtrl', function($scope, $firebaseAuth, $firebaseObject) {
