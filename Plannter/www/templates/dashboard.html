@@ -6,7 +6,23 @@
     </ion-nav-buttons>
     <ion-content overflow-scroll="true" class="has-header">
         <div class="padding">
-        	<h1 class="pageHeading">Dashboard</h1>         
+        	<h1 class="pageHeading">Dashboard</h1>  
+
+         <ion-list>
+        <div ng-repeat="crop in crops">
+          <ion-item class="item-stable"
+                    ng-click="toggleCrop(crop)"
+                    >
+            &nbsp;
+             {{crop.name}}
+          </ion-item>
+          <ion-item class="item-accordion"
+                    ng-repeat="item in crop.items"
+
+          </ion-item>
+        </div>
+        <button class="button button-balanced button-block icon-left ion-plus margin-top" value="Add Crop" ui-sref="tabsPostLogin.addcrop">Add Crop</button>
+      </ion-list>     
         </div>
     </ion-content>
 </ion-view>

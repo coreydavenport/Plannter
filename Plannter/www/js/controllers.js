@@ -14,15 +14,43 @@ angular.module('app.controllers', ['firebase'])
 
 })
 
-.controller('dashboardCtrl', function($scope) {
+.controller('dashboardCtrl', function($scope, $firebaseArray, $http) {
+	var ref = new Firebase("https://plannter.firebaseio.com/crops");
+	console.log("Firebase connected!", ref);
+
+	$scope.crops = $firebaseArray(ref);
+
+
+	console.log($scope.crops);
+
+
+
+	ref.on("value", function(result) {
+	
+		$scope.crops = $firebaseArray(ref);
+
+	}, function (error) {
+		console.log("the read failed" +  error.code);
+	});
+
+	$scope.toggleCrop = function(crop) {
+    if ($scope.isCropShown(crop)) {
+      $scope.shownCrop = null;
+    } else {
+      $scope.shownCrop = crop;
+    }
+  };
+  $scope.isCropShown = function(crop) {
+    return $scope.shownCrop === crop;
+  };
 
 })
 
 .controller('addcropCtrl', function($scope, $firebaseObject, $http) {
-	var ref = new Firebase("https://plannter.firebaseio.com/crops/");
+	var ref = new Firebase("https://plannter.firebaseio.com/crops");
 	console.log(ref);
 
-	var obj = $firebaseObject(ref);
+	$scope.obj = $firebaseObject(ref);
 
 	$scope.formModel = {};
 
@@ -30,11 +58,15 @@ angular.module('app.controllers', ['firebase'])
 		console.log("Form Submitted!");
 		console.log($scope.formModel);
 
-		$http.post('https://plannter.firebaseio.com/crops/', $scope.formModel).success(function (data) {
-				console.log("Success!");
-			}).error(function (data) {
-				console.log("Something went wrong :(");
-			})
+
+
+
+		ref.push({ name: $scope.formModel.name,
+				  startDate: $scope.formModel.startDate,
+				  gens: $scope.formModel.gens,
+				  plantPeriod: $scope.formModel.plantPeriod,
+				  transplantPeriod: $scope.formModel.transplantPeriod
+		});
 	};
 })
 

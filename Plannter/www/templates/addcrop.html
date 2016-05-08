@@ -7,7 +7,7 @@
     <ion-content overflow-scroll="true" class="has-header">
         <div class="padding addCropForm" ng-controller="addcropCtrl">
         	<h1 class="pageHeading">Add Crop</h1>
-            <form action="" >
+            <form action="" ng-submit="onSubmit()">
 	            <div class="list">
             	<label class="item item-input item-floating-label">
    					<span class="input-label">Name</span>
@@ -30,7 +30,7 @@
     				<input type="number" ng-model="formModel.transplantPeriod" placeholder="Transplant Period (in weeks)">
   				</label>
 
-					<input type="submit" ng-click="onSubmit()" class="button button-balanced button-block addCropSave">
+					<input type="submit" class="button button-balanced button-block">
 
             </div>
 

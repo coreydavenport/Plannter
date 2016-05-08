@@ -9839,3 +9839,7 @@ hr {
 .addCropSave {
   padding-left: 0;
   margin-left: 0, auto; }
+
+/** Dashboard **/
+.button.button-balanced {
+  margin-top: 40px; }
