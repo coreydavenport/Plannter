@@ -1,0 +1,42 @@
+<ion-view title="Add Crop" id="page8">
+    <ion-nav-buttons side="right">
+        <a href="#/home"><button class="button">
+            Log out
+        </button></a>
+    </ion-nav-buttons>
+    <ion-content overflow-scroll="true" class="has-header">
+        <div class="padding addCropForm">
+        	<h1 class="pageHeading">Add Crop</h1>
+            <form action="" ng-submit="add()">
+	            <div class="list">
+            	<label class="item item-input item-floating-label">
+   					<span class="input-label">Name</span>
+    				<input type="text" ng-model="name" placeholder="Name">
+  				</label>
+  				<label class="item item-input item-floating-label">
+    				<span class="input-label">Start Date</span>
+    				<input type="date" ng-model="startDate" placeholder="Start Date">
+  				</label>
+  				<label class="item item-input item-floating-label">
+    				<span class="input-label">Number of Generations</span>
+    				<input type="number" ng-model="gens" placeholder="Number of Seed Generations">
+  				</label>
+  				<label class="item item-input item-floating-label">
+    				<span class="input-label">Plant Period (in weeks)</span>
+    				<input type="number" ng-model="plantPeriod" placeholder="Plant Period (in weeks)">
+  				</label>
+  				<label class="item item-input item-floating-label">
+    				<span class="input-label">Transplant Period (in weeks)</span>
+    				<input type="number" ng-model="transplantPeriod" placeholder="Transplant Period (in weeks)">
+  				</label>
+  				<label class="item item-input item-stacked-label" for="">
+  					<span class="input-label">Submit</span>
+					<input type="submit" value="Save" class="button button-balanced button-block addCropSave">
+  				</label>
+            </div>
+
+            </form>
+
+        </div>
+    </ion-content>
+</ion-view>
