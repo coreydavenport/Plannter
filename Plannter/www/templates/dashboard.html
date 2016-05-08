@@ -9,15 +9,22 @@
         	<h1 class="pageHeading">Crop List</h1>  
 
          <ion-list>
-        <div ng-repeat="crop in crops">
+        <div ng-repeat="crop in crops" ng-click="rend()">
           <ion-item id="cropItem" class="item-stable"
                     ng-click="toggleCrop(crop)"
+                    ng-class="{active:isCropShown(crop)}"
                     >
             &nbsp;
              {{crop.name}}
           </ion-item>
-          <ion-item class="item-accordion"
-                    ng-repeat="item in crop.items"
+          <ion-item class="item-accordion" ng-show="isCropShown(crop)">
+            
+            <div ui-calendar="uiConfig.calendar" ng-model="calendarDate"calendar="calendar">
+              
+            </div>
+
+
+
 
           </ion-item>
         </div>

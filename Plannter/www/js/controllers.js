@@ -14,17 +14,44 @@ angular.module('app.controllers', ['firebase'])
 
 })
 
-.controller('dashboardCtrl', function($scope, $firebaseArray, $http) {
+.controller('dashboardCtrl', function($scope, $firebaseArray, $http, $compile, uiCalendarConfig) {
 	var ref = new Firebase("https://plannter.firebaseio.com/crops");
 	console.log("Firebase connected!", ref);
 
 	$scope.crops = $firebaseArray(ref);
 
-
 	console.log($scope.crops);
 
 
+	$scope.calendarDate = [
+		{
+			events: [
 
+			],
+		}
+	];
+
+	$scope.uiConfig = {
+	      calendar:{
+	        height: 450,
+	        editable: true,
+	        header:{
+	          left: 'title',
+	          center: '',
+	          right: 'today,prev,next'
+	        },
+	        dayClick: $scope.setCalDate,
+	        eventDrop: $scope.alertOnDrop,
+	        eventResize: $scope.alertOnResize
+	      }
+	    };
+
+
+	$scope.rend = function (crop){
+		console.log($scope);
+		$scope.calendarDate.fullCalendar('render');
+
+	}
 	ref.on("value", function(result) {
 	
 		$scope.crops = $firebaseArray(ref);
@@ -35,6 +62,7 @@ angular.module('app.controllers', ['firebase'])
 
 	$scope.toggleCrop = function(crop) {
     if ($scope.isCropShown(crop)) {
+      
       $scope.shownCrop = null;
     } else {
       $scope.shownCrop = crop;
