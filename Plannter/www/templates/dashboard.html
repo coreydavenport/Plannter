@@ -6,11 +6,11 @@
     </ion-nav-buttons>
     <ion-content overflow-scroll="true" class="has-header">
         <div class="padding">
-        	<h1 class="pageHeading">Dashboard</h1>  
+        	<h1 class="pageHeading">Crop List</h1>  
 
          <ion-list>
         <div ng-repeat="crop in crops">
-          <ion-item class="item-stable"
+          <ion-item id="cropItem" class="item-stable"
                     ng-click="toggleCrop(crop)"
                     >
             &nbsp;

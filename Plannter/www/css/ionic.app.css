@@ -9841,5 +9841,22 @@ hr {
   margin-left: 0, auto; }
 
 /** Dashboard **/
+#cropItem {
+  border: none;
+  background: #52b848;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #52b848 0%, #9ecc46 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -2px; }
+
 .button.button-balanced {
   margin-top: 40px; }
