@@ -1,0 +1,213 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$balanced:                        #52b848 !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+
+/******************************************************
+
+MAIN STYLES (temporary)
+
+******************************************************/
+
+
+/** Text over page images **/
+
+.has-header {
+  top: 0;
+
+
+}
+
+.tabs {
+  height: 70px;
+}
+
+.wrapper {
+
+  position: relative;
+  overflow: hidden;
+
+}
+
+.wrapper h1 {
+
+  position: absolute;
+  width: 70%;
+  top: 0;
+  color: white;
+  text-align: justify;
+  font-size: 60px;
+  padding-left: 15px;
+
+}
+
+.signUpButton {
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+
+}
+
+.wrapper h2 {
+
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+
+}
+
+
+
+/** Break lines **/
+
+hr {
+
+	color: #FFFBFD;
+
+}
+/** Sign Up Button on Home Page **/
+.signUp {
+  width: 100%;
+  height: 300px;
+
+}
+
+/** Login Styles **/
+
+.login {
+background: #52b848; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #52b848 0%,#9ecc46 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #52b848 0%,#9ecc46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.item-stacked-label {
+  border: none;
+
+}
+
+.item {
+  margin-left: 0;
+}
+
+.input-label {
+  color: white;
+}
+
+
+.button-outline.button-outline {
+  
+  color: #ffffff;
+  background: transparent;
+
+}
+
+.button-outline.button-outline.activated {
+  background-color: #ffffff;
+  color: #52b848;
+}
+
+
+/** Sign Up Styles **/
+
+.signupBG {
+background: #52b848; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #52b848 0%,#9ecc46 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #52b848 0%,#9ecc46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/** Home Page Styles **/
+
+.custom-icon {
+  font-size: 64px;
+  color: #52b848;
+}
+
+/** Add Crop Form **/
+
+.pageHeading {
+  padding-top: 30px;
+  color: #272727;
+  font-family: "Helvetica Neue", 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  border-bottom: solid, 1px;
+
+
+}
+
+
+
+.addCropSave {
+  
+  padding-left: 0;
+  margin-left: 0, auto;
+
+}
+
+
+/** Dashboard **/
+
+#cropItem {
+border: none;
+background: #52b848; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #52b848 0%, #9ecc46 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #52b848 0%,#9ecc46 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #52b848 0%,#9ecc46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color: #ffffff;
+font-weight: 600;
+font-size: 28px;
+letter-spacing: -2px;
+}
+
+
+.button.button-balanced {
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<ion-view title="Login" id="page5">
+  <ion-content overflow-scroll="true" class="has-header login">
+    <div class="wrapper padding">
+      <label class="item item-input item-stacked-label padding-top">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="me@gmail.com" ng-model="user.email">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="Enter password" ng-model="user.password">
+      </label>
+      <button class="button button-balanced button-block" ng-click="login()">Submit</button>
+      <button class="button icon-left ion-social-facebook button-block button-positive"
+              ng-click="ctrl.loginWithFacebook()">
+        Log in with Facebook
+      </button>      
+      <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
+    </div>
+
+
+    <div class="padding">
+      </div>
+      <br><br><br>
+      <button class="button button-clear button-light button-block" ui-sref="signup">
+        Not a member?
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

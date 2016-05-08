@@ -1,0 +1,28 @@
+<ion-view title="Sign up" id="page6">
+  <ion-content class="signupBG">
+    <div class="wrapper">
+      <form role="form" class="signUp padding" ng-submit="createUser(form)" >
+        <label class="item item-input item-stacked-label padding-top">
+          <span class="input-label">Email</span>
+          <input ng-model="form.email" ng-name="email" type="email" placeholder="me@gmail.com" id="uName">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Password</span>
+          <input ng-model="form.password" ng-name="password" type="password" placeholder="******" id="pwd" >
+        </label>
+        <br />
+        <button class="button button-balanced button-block" type="submit">Submit</button>
+        <button class="button button-stable button-block" ui-sref="login">
+          I have an account
+        </button>
+
+      </form>
+    </div>
+
+      
+      <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
