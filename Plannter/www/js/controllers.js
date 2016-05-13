@@ -23,7 +23,7 @@ angular.module('app.controllers', ['firebase'])
 	console.log($scope.crops);
 
 
-	$scope.calendarDate = [
+	var calendarDate = [
 		{
 			events: [
 
@@ -47,11 +47,6 @@ angular.module('app.controllers', ['firebase'])
 	    };
 
 
-	$scope.rend = function (crop){
-		console.log($scope);
-		$scope.calendarDate.fullCalendar('render');
-
-	}
 	ref.on("value", function(result) {
 	
 		$scope.crops = $firebaseArray(ref);

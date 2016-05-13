@@ -300,15 +300,7 @@ angular.module('ui.calendar', [])
             return false;
           }
         });
-        var removeCalendarVisibilityWatcher = scope.$watch(function() {
-                return scope.calendar ? scope.calendar.is(':visible') : undefined;
-            },
-            function(newValue) {
-                if (newValue) {
-                    scope.calendar.fullCalendar('render');
-                    removeCalendarVisibilityWatcher();
-                }
-            });
+
         scope.$watch(getOptions, function(newO,oldO){
             scope.destroy();
             scope.init();
