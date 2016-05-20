@@ -145,12 +145,39 @@ background: linear-gradient(135deg, #52b848 0%,#9ecc46 100%); /* W3C, IE10+, FF1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b848', endColorstr='#9ecc46',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.logo {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.appName {
+  display: block;
+  text-align: center;
+  font-family: "Helvetica Neue", 'Arial', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  color: white;
+}
+
 /** Home Page Styles **/
 
 .custom-icon {
   font-size: 64px;
   color: #52b848;
 }
+
+.descText {
+  font-family: "Helvetica Neue", 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  text-align: center;
+
+}
+
+
 
 /** Add Crop Form **/
 
